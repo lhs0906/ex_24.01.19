@@ -1,0 +1,25 @@
+1. 링크 (하이퍼링크) : <a> 태그로 정의함. 
+   1) href 속성 : 링크 주소를 정의함. ( <a href="http://google.com"> 구글사이트 </a> )
+       -> href 속성 값은 절대경로 ( href="http.//google.com"/ , 다른 웹사이트의 페이지),
+           상대경로 ( href="../doc/info.html" , 웹 사이트 안에서의 다른 페이지 ),
+           내부 파일 ( href="#anchor1" , 현재 페이지 안의 다른 위치 ) 가 있음.
+
+   2) target 속성 : 각 링크가 클릭되었을 때, 새로운 페이지가 어디에 열리는지를 지정함.
+      1) _blank : 새로운 윈도우에서 페이지를 연다.
+                   ( <a  href="http://google.com" target="_blank"> google 링크 </a> )
+      2) _self : 현재 윈도우에서 새로운 페이지로 연다. (적재한다.)
+                   ( <a  href="http://google.com" target="_self"> google 링크 </a> )
+
+   3) id 속성 : 사용자를 현재 페이지 내의 다른 위치로 이동시킴. (북마크 개념)
+                  ( <a href="#section1"> 참고사항으로 가려면 여기를 클릭하세요. </a> )
+                  ( <a id="section1"> 참고사항 </a> )
+
+
+   4) 그 밖에 생성 가능한 링크들
+     1. 이메일 링크 
+  : <a href="mailto:hong@google.com?subject=Feedback" > hong@google.com </a>
+
+     2. 다운로드 링크
+  : <a href="https://www.company.com/data.zip"> 파일 다운로드 </a> 
+
+   5) <base> 태그 : head 섹션에서 <base> 태그를 사용하면 모든 링크에 대한 기본 디렉토리를 지정할 수 있음....(? 나중에 다시 공부해보자)
